@@ -58,9 +58,12 @@ export default function StakingPage() {
     setUnstakeAmount(e.target.value);
   }
 
-  const web3 = new Web3(window.ethereum);
   const stakingAbi: any[] = stakingJson.abi;
-  const provider = new ethers.BrowserProvider(window.ethereum);
+  let web3, provider;
+  if(typeof window != 'undefined') {
+    web3 = new Web3(window.ethereum);
+    provider = new ethers.BrowserProvider(window.ethereum);
+  }
   const signer = provider.getSigner();
   
   const handleStake = async () => {
