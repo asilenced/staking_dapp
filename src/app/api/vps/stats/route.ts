@@ -14,7 +14,7 @@ const DEAD_ADDRESS = "0x000000000000000000000000000000000000dEaD";
 const UNCX_TOKEN_LOCKER = "0x663a5c229c09b049e36dcc11a9b0d4a8eb9db214";
 const UNCX_TOKEN_VESTING = "0xdba68f07d1b7ca219f78ae8582c213d975c25caf";
 
-export const GET = async (req: Request) => {
+ const GET = async (req: Request) => {
   const response = await fetch(url, {
     method: "GET",
     headers: {
