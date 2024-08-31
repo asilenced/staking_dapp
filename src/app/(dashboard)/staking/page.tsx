@@ -82,7 +82,7 @@ export default function StakingPage() {
     try {
       console.log('signer', (await signer).address);
       const stakeContract = new web3.eth.Contract(stakingAbi, "0x3aD4C840EEBF0E81A341aF6DE01112BD73EEC9F4");
-      const tx = await stakeContract.methods.unStake().send({from: (await signer).address})
+      const tx = await stakeContract.methods.unstake().send({from: (await signer).address})
       console.log('Deposit successful=====>', tx);
     } catch(error) {
       console.log(error);
