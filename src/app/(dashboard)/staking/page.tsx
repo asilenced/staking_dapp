@@ -4,7 +4,7 @@ import { Button } from "@app/components/ui/button";
 import { Input } from "@app/components/ui/input";
 import * as Tabs from "@radix-ui/react-tabs";
 import Web3 from 'web3';
-import { ethers, Contract, ContractTransaction } from 'ethers';
+import { ethers, Contract, ContractTransaction, Provider } from 'ethers';
 import stakingJson from '../../../contract/staking.json';
 
 import {
