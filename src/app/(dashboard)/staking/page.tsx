@@ -14,6 +14,7 @@ import {
   RotateCwIcon,
 } from "lucide-react";
 import { Epoch } from '@app/types/pair';
+import { error } from 'console';
 
 export default function StakingPage() {
   const [showAll, setShowAll] = useState<boolean>(false);
@@ -60,9 +61,12 @@ export default function StakingPage() {
 
   const stakingAbi: any[] = stakingJson.abi;
   let web3: any, provider: any;
-  if(typeof window != 'undefined') {
+  try {
     web3 = new Web3(window.ethereum);
     provider = new ethers.BrowserProvider(window.ethereum);
+  }
+  catch (error) {
+    console.log(error)
   }
   const signer = provider?.getSigner();
   
