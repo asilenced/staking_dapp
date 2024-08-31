@@ -257,7 +257,7 @@ export default function StakingPage() {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b">
+                        {/* <tr className="border-b">
                           <th
                             scope="row"
                             className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -286,7 +286,7 @@ export default function StakingPage() {
                           </th>
                           <td className="px-6 py-4">$ 200</td>
                           <td className="px-6 py-4">2023-01-01 12:00:00</td>
-                        </tr>
+                        </tr> */}
                       </tbody>
                     </table>
                   </div>
@@ -322,7 +322,7 @@ export default function StakingPage() {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b">
+                        {/* <tr className="border-b">
                           <th
                             scope="row"
                             className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -351,7 +351,7 @@ export default function StakingPage() {
                           </th>
                           <td className="px-6 py-4">$ 200</td>
                           <td className="px-6 py-4">2023-01-01 12:00:00</td>
-                        </tr>
+                        </tr> */}
                       </tbody>
                     </table>
                   </div>
